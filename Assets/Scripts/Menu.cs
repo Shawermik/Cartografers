@@ -14,4 +14,14 @@ public class Menu : MonoBehaviour
         Debug.Log("Quit");
         Application.Quit();
     }
+    public void MediaOff()
+    {
+        Debug.Log("On");
+        AudioListener.pause = false;
+    }
+    public void MediaOn()
+    {
+        Debug.Log("Off");
+        AudioListener.pause = true;
+    }
 }
